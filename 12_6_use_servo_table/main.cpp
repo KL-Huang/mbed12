@@ -49,16 +49,5 @@ int main() {
 
    printf("%1.3f\r\n", (float) steps * 6.5 * 3.14 / 32 / time);
 
-   servo_control(-22.51463);
-    steps = 0;
-    t.reset();
-    t.start();
-
-    ThisThread::sleep_for(5000ms);
-
-    time = t.read();
-
-    printf("clockwise: %1.3f cm\r\n", (float) steps * 6.5 * 3.14 / 32 / time);
-   
    }
 }
